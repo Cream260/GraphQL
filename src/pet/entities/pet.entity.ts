@@ -17,7 +17,7 @@ export class Pet {
   @Field(() => Int)
   age: number;
 
-  @ManyToOne(() => Owner, (owner) => owner.pets)
+  @ManyToOne(() => Owner, (owner) => owner.pet)
   @Field(() => Owner)
   owner: Owner;
 }
